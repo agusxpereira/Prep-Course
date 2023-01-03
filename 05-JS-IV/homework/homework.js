@@ -173,9 +173,9 @@ function agregarMetodoCalculoDescuento (producto) {
   producto.calcularPrecioDescuento = function(){
     var precio = producto.precio;
     var descuento = producto.porcentajeDeDescuento;
-    var cuentoDesprecio = precio - (precio * descuento)
-    return cuentoDesprecio;
+    return precio - (precio * descuento);
   }
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
